@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Jogo da Memória</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="extra">
+        <div id="score">Sua pontuação é: 0</div>
+        <div id="attempts">Tentativas: 0</div>
+        <div id="message"></div>
+
+        <button class="btn-new" onclick="newGame()">Novo Jogo</button>
+    </div>
+    <section class="memory-game">
+        <div class="memory-card" data-name="Dog">
+            <img class="front-face" src="images/Dog.png" alt="Dog">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Dog">
+            <img class="front-face" src="images/Dog.png" alt="Dog">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Wolf">
+            <img class="front-face" src="images/Wolf.png" alt="Wolf">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Wolf">
+            <img class="front-face" src="images/Wolf.png" alt="Wolf">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Cat">
+            <img class="front-face" src="images/Cat.png" alt="Cat">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Cat">
+            <img class="front-face" src="images/Cat.png" alt="Cat">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+        <div class="memory-card" data-name="Bird">
+            <img class="front-face" src="images/Bird.png" alt="Bird">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Bird">
+            <img class="front-face" src="images/Bird.png" alt="Bird">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Tiger">
+            <img class="front-face" src="images/Tiger.png" alt="Tiger">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Tiger">
+            <img class="front-face" src="images/Tiger.png" alt="Tiger">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Snake">
+            <img class="front-face" src="images/Snake.png" alt="Snake">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+
+        <div class="memory-card" data-name="Snake">
+            <img class="front-face" src="images/Snake.png" alt="Snake">
+            <img class="back-face" src="assets/img/question.png" alt="Ponto de interrogação">
+        </div>
+    </section>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
