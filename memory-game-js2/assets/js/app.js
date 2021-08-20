@@ -71,6 +71,7 @@ function startGame() {
   }
   // reset moves
   moves = 0;
+  moviment.innerHTML = "Movimento";
   counter.innerHTML = moves;
   // reset rating
   for (var i = 0; i < stars.length; i++) {
@@ -171,6 +172,10 @@ function moveCounter() {
       }
     }
   }
+
+  if (moves >= 2) {
+    moviment.innerHTML = "Movimentos";
+  }
 }
 
 // @description game timer
@@ -195,7 +200,7 @@ function startTimer() {
 
 // @description congratulations when all cards match, show modal and moves, time and rating
 function congratulations() {
-  if (matchedCard.length == 20) {
+  if (matchedCard.length == 24) {
     clearInterval(interval);
     finalTime = timer.innerHTML;
 
